@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3B0" />
+      <stop offset="35%" stop-color="#F5B516" />
+      <stop offset="70%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#92400E" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0B0F17" />
+    </linearGradient>
+    <linearGradient id="glowG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F5B516" stop-opacity="0" />
+      <stop offset="50%" stop-color="#F5B516" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#F5B516" stop-opacity="0" />
+    </linearGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Shield Base with Gold Rim -->
+  <path d="M 60 8 L 104 26 C 104 74 78 106 60 114 C 42 106 16 74 16 26 Z" 
+        fill="url(#shieldGrad)" 
+        stroke="url(#goldGrad)" 
+        stroke-width="2.5" />
+  
+  <!-- Subtle Inner Border -->
+  <path d="M 60 14 L 98 30 C 98 70 75 99 60 107 C 45 99 22 70 22 30 Z" 
+        fill="none" 
+        stroke="#F5B516" 
+        stroke-opacity="0.25" 
+        stroke-width="1" />
+
+  <!-- Royal Crown (Center Top) -->
+  <path d="M 38 46 L 44 32 L 53 41 L 60 27 L 67 41 L 76 32 L 82 46 C 75 49 45 49 38 46 Z" 
+        fill="url(#goldGrad)" 
+        filter="url(#goldGlow)" />
+  
+  <!-- Crown Jewels / Diamond Dots -->
+  <circle cx="44" cy="30" r="2.2" fill="#FFFBEB" />
+  <circle cx="60" cy="25" r="2.8" fill="#FFFBEB" />
+  <circle cx="76" cy="30" r="2.2" fill="#FFFBEB" />
+
+  <!-- Sleek Aerodynamic Car Silhouette Flowing Through Shield -->
+  <!-- Roofline and Windshield -->
+  <path d="M 34 68 C 42 56 54 53 66 53 C 78 53 84 57 88 64 C 92 65 96 68 96 72 C 96 74 94 75 91 75 L 29 75 C 26 75 24 73 24 70 C 24 67 29 65 34 68 Z" 
+        fill="none" 
+        stroke="url(#goldGrad)" 
+        stroke-width="2.8" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+
+  <!-- Car Window Line -->
+  <path d="M 44 65 L 58 60 L 72 60 L 78 65 Z" 
+        fill="url(#goldGrad)" 
+        opacity="0.35" />
+
+  <!-- High-gloss Light Flare / Laser Reflection -->
+  <line x1="28" y1="75" x2="92" y2="75" stroke="url(#glowG)" stroke-width="2" />
+
+  <!-- Wheels / Hub glow -->
+  <circle cx="39" cy="76" r="5" fill="#0B0F17" stroke="url(#goldGrad)" stroke-width="2" />
+  <circle cx="39" cy="76" r="2" fill="#F5B516" />
+  <circle cx="81" cy="76" r="5" fill="#0B0F17" stroke="url(#goldGrad)" stroke-width="2" />
+  <circle cx="81" cy="76" r="2" fill="#F5B516" />
+
+  <!-- Polishing / Ceramic Coating Precision Sparkle -->
+  <path d="M 60 84 Q 60 90 66 90 Q 60 90 60 96 Q 60 90 54 90 Q 60 90 60 84 Z" 
+        fill="#FFF3B0" />
+  <circle cx="60" cy="90" r="1.5" fill="#FFFFFF" />
+
+  <!-- Bottom Crest Letter "K" -->
+  <text x="60" y="103" text-anchor="middle" font-family="'Cinzel', serif" font-size="7.5" font-weight="900" fill="url(#goldGrad)" letter-spacing="1.5">CARY • NC</text>
+</svg>
